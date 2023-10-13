@@ -22,6 +22,7 @@ form {
   justify-content: center;
   align-content: center;
   align-items: center;
+  border-radius: 5px;
 }
 
 form input,
@@ -30,6 +31,7 @@ form button {
   font-size: 2rem;
   border: none;
   background: white;
+  outline: none;
 }
 
 form button {
@@ -125,7 +127,7 @@ select {
 }
 
 .select::after {
-  content: "\25BC";
+  content: '\25BC';
   position: absolute;
   background: #ff6f47;
   top: 0;
@@ -140,9 +142,24 @@ select {
   color: #ff6f47;
 }
 
+@media (max-width: 768px) {
+  body {
+    margin: 0 auto;
+  }
 
-@media (max-width:768px){
-body{
-margin:0 auto;
- M }
+  header {
+    font-size: 1rem;
+  }
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+  input {
+    width: 300px;
+  }
 }
